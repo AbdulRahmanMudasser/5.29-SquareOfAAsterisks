@@ -19,5 +19,26 @@
         {
             size = 20;
         }
+
+        // displaying square
+        for (int row = 1; row <= size; row++) 
+        {
+            for (int col = 1; col <= size; col++) 
+            {
+                if (row == 1 || row == size || col == 1 || col == size) 
+                {
+                    Console.Write("*");
+                }
+
+                else
+                {
+                    Console.Write(" ");
+                }
+            }
+            // end of inner loop
+
+            Console.WriteLine();    // for new line
+        }
+        // end of outer loop
     }
 }
